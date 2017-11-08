@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-  <string name="app_name">phlaiku</string>
+  <string name="app_name">classified003</string>
   <string name="image_detail">Image Detail</string>
-  <string name="friends_and_you">Visual Phlaiku</string>
-  <string name="interesting_today">Photo Phlai-Q</string>
-  <string name="tags">Phlaiku-Bot</string>
+  <string name="friends_and_you"></string>
+  <string name="interesting_today"></string>
+  <string name="tags"></string>
   <string name="explore">Inceptionv5</string>
   <string name="moon">The Moon</string>
   <string name="japan">Basho</string>

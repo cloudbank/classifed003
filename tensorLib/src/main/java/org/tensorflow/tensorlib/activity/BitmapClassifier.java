@@ -21,11 +21,9 @@ import java.util.concurrent.Future;
 /**
  * Created by sabine on 7/16/17.
  */
-
+//@todo intent service or headless fragment
 public class BitmapClassifier {
-
   private static final Logger LOGGER = new Logger();
-
   List<Classifier.Recognition> results = new ArrayList<>();
   //@todo ensure static vars are persisted
   static ClassifierType classifierType;
@@ -44,9 +42,9 @@ public class BitmapClassifier {
     //todo we could startactivity after setting contructor, but even more hacky
   */
   private static BitmapClassifier instance = null;
+  private ExecutorService executor;
 
   private BitmapClassifier() {
-
   }
 
   public static BitmapClassifier getInstance() {
@@ -57,8 +55,6 @@ public class BitmapClassifier {
   }
 
   public static float[] process(int[] pixels, ClassifierType type) {
-
-
     float[] floatValues = new float[type.getInputSize() * type.getInputSize() * 3];
     int imageMean = type.getImageMean();
     float imageStd = type.getImageStd();
@@ -68,9 +64,7 @@ public class BitmapClassifier {
       floatValues[i * 3 + 1] = (((val >> 8) & 0xFF) - imageMean) / imageStd;
       floatValues[i * 3 + 2] = ((val & 0xFF) - imageMean) / imageStd;
     }
-
     return floatValues;
-
   }
 
   private static Classifier getClassifier(ClassifierType type) {
@@ -91,19 +85,16 @@ public class BitmapClassifier {
     return c;
   }
 
-
   private static void saveClassifier(Classifier classifier, ClassifierType type) {
     if (type.getName().equals(ClassifierType.CLASSIFIER_INCEPTION)) {
       TensorLib.inceptionClassifier = classifier;
     } else if (type.getName().equals(ClassifierType.CLASSIFIER_RETRAINED)) {
       TensorLib.retrainedClassifier = classifier;
     }
-
   }
 
   //cached classifier
   private static Classifier getClassifierForType(ClassifierType classifierType) {
-
     classifier = null;
     if (classifierType.equals(ClassifierType.CLASSIFIER_INCEPTION)) {
       //if (getClassifier(ClassifierType.CLASSIFIER_RETRAINED) != null) {
@@ -124,8 +115,6 @@ public class BitmapClassifier {
           );
       saveClassifier(classifier, classifierType);
     }
-
-
     //could do the float conv right now
     mInputSize = classifierType.getInputSize();
     return classifier;
@@ -138,15 +127,10 @@ public class BitmapClassifier {
       handler2.removeCallbacksAndMessages(null);
       handler2 = null;
     }*/
-
-    if (!future.isDone() && !future.isCancelled()) {
+    if ((future != null && !future.isDone()) && !future.isCancelled()) {
       future.cancel(true);
-
     }
-
-
   }
-
 
   //@todo optimize use of bitmap of try another way perhaps pixels array
   public String recognize(final int[] pixels, final String type) {
@@ -155,15 +139,16 @@ public class BitmapClassifier {
     //@todo do we need to deal with JPEG decoding after all?  removed decodejpeg from retrained
     //completeablefuture not available until 24
     final long startTime = SystemClock.uptimeMillis();
-    ExecutorService executor = Executors.newSingleThreadExecutor();
-    Log.d(TAG, "classifier in :" +  pixels.length + " " + type);
-     future
+    executor = Executors.newSingleThreadExecutor();
+    Log.d(TAG, "classifier in :" + pixels.length + " " + type);
+    future
         = executor.submit(new Callable() {
       public List<Classifier.Recognition> call() {
+        android.os.Process.setThreadPriority(android.os.Process.THREAD_PRIORITY_BACKGROUND);
         ClassifierType classifierType = ClassifierType.getTypeForString(type);
         float[] normalizedPixels = process(pixels, classifierType);
         classifier = BitmapClassifier.getClassifierForType(classifierType);
-        Log.d(TAG, "future in :" +  classifier);
+        Log.d(TAG, "future in :" + classifier);
         return (ArrayList<Classifier.Recognition>) classifier.recognizeImage(normalizedPixels);
       }
     });
@@ -172,16 +157,17 @@ public class BitmapClassifier {
     try {
       results = future.get(); //
       final long lastProcessingTimeMs = SystemClock.uptimeMillis() - startTime;
-      Log.d(TAG, "results in :" +  results.toString() + " " + lastProcessingTimeMs);
+      Log.d(TAG, "results in :" + results.toString() + " " + lastProcessingTimeMs);
     } catch (ExecutionException | InterruptedException ex) {
       //cleanup();
       //return;
     }
+    executor.shutdown();
     return toString(results);
   }
 
   private String toString(List<Classifier.Recognition> r) {
-   StringBuilder sb = new StringBuilder();
+    StringBuilder sb = new StringBuilder();
     if (r.size() == 0) {
       sb.append("Argh, there were no results!");
     }
@@ -249,6 +235,5 @@ public class BitmapClassifier {
   /*              break;
         }
     }*/
-
 }
 

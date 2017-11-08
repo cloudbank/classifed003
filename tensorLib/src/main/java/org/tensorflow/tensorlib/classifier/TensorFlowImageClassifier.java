@@ -101,8 +101,10 @@ public class TensorFlowImageClassifier implements Classifier {
       throw new RuntimeException("Problem reading label file!", e);
     }
     final long startTime = SystemClock.uptimeMillis();
-    int rid = context.getResources().getIdentifier(modelFilename, "raw", context.getPackageName());
-    c.inferenceInterface = new TensorFlowInferenceInterface(context, rid);
+
+    //res/raw does not include .pb but assets do
+
+    c.inferenceInterface = new TensorFlowInferenceInterface(context,modelFilename);
     final long lastProcessingTimeMs = SystemClock.uptimeMillis() - startTime;
     Log.d(TAG, "create in :" + lastProcessingTimeMs);
     // The shape of the output is [N, NUM_CLASSES], where N is the batch size.

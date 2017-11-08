@@ -21,11 +21,11 @@
       android:id="@+id/tab_layout"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
-      android:background="@color/back_alpha_40"
+      android:background="@drawable/background_gradient"
       android:minHeight="?attr/actionBarSize"
       app:tabIndicatorColor="@color/ice"
       app:tabSelectedTextColor="@color/shell"
-      app:tabTextColor="@color/back_alpha_30"
+      app:tabTextColor="@color/shell"
       android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
       app:tabGravity="fill"
       app:tabMode="fixed"/>

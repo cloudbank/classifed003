@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/classified003.iml" filepath="$PROJECT_DIR$/classified003.iml" />
+      <module fileurl="file://$PROJECT_DIR$/contactsApp/contactsApp.iml" filepath="$PROJECT_DIR$/contactsApp/contactsApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/loginActivity/loginActivity.iml" filepath="$PROJECT_DIR$/loginActivity/loginActivity.iml" />
       <module fileurl="file://$PROJECT_DIR$/oauthkit/oauthkit.iml" filepath="$PROJECT_DIR$/oauthkit/oauthkit.iml" />
-      <module fileurl="file://$PROJECT_DIR$/phlaiku.iml" filepath="$PROJECT_DIR$/phlaiku.iml" />
       <module fileurl="file://$PROJECT_DIR$/tensorLib/tensorLib.iml" filepath="$PROJECT_DIR$/tensorLib/tensorLib.iml" />
     </modules>
   </component>

@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.anubis.oauthkit">
+          package="com.droidteahouse.oauthkit">
 
   <application
       android:allowBackup="true"
