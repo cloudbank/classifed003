@@ -208,7 +208,7 @@ public class InterestingFragment extends FlickrBaseFragment {
             @Override
             public void onLoadMore(int page, int totalItemsCount) {
                 customLoadMoreDataFromApi(page);
-            }
+            }awr25
         });*/
     rAdapter.setOnItemClickListener((view1, position) -> {
       Intent intent = new Intent(getActivity(), ClassifierDisplayActivity.class);

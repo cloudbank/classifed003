@@ -31,18 +31,18 @@ import io.realm.Realm;
 public class ClassifierDisplayActivity extends AppCompatActivity {
   public static final String TAG = "ClassifierDisplayAct";
   String mUid = "";
-  static Photo mPhoto;
-  static Realm pRealm;
+  Photo mPhoto;
+  Realm pRealm;
   //@todo deal w static reclaim again
-  static TextView resultsView;
-  static int[] pixels;
-  static int width;
-  static String classifierType;
+  TextView resultsView;
+  int[] pixels;
+  int width;
+  String classifierType;
   BitmapAsyncTask bmt;
-  static String mPid;
+   String mPid;
 
   //@todo change to  executor 2 threads future w priority in bg and move realm
-  static private class BitmapAsyncTask extends AsyncTask<RequestCreator, Void, Bitmap> {
+   private class BitmapAsyncTask extends AsyncTask<RequestCreator, Void, Bitmap> {
     @Override
     protected Bitmap doInBackground(RequestCreator... rc) {
       Bitmap b = null;
@@ -58,7 +58,9 @@ public class ClassifierDisplayActivity extends AppCompatActivity {
     protected void onPostExecute(Bitmap result) {
       pixels = new int[width * width];
       result.getPixels(pixels, 0, width, 0, 0, width, width);
+
       String results = BitmapClassifier.getInstance().recognize(pixels, classifierType);
+
       resultsView.setText(results);
       result.recycle();
       pixels = null;
@@ -95,8 +97,8 @@ public class ClassifierDisplayActivity extends AppCompatActivity {
     RequestCreator rc = with(Classified003App.getAppContext()).load(mPhoto.getUrl()).networkPolicy(NetworkPolicy.OFFLINE);
     rc.into(imageView);
     if (mPhoto.recogs.length() < 1) {
-    bmt = new BitmapAsyncTask();
-    bmt.execute(rc);
+      bmt = new BitmapAsyncTask();
+      bmt.execute(rc);
     } else {
       final long startTime = SystemClock.uptimeMillis();
       resultsView.setText(mPhoto.recogs);

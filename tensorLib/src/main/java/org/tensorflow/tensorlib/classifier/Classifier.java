@@ -12,12 +12,14 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 ============================================================================== */
+
 package org.tensorflow.tensorlib.classifier;
 
 import android.graphics.Bitmap;
 import android.graphics.RectF;
 
 import java.util.List;
+
 ///@todo fix up the immutable class
 
 /**
@@ -33,14 +35,17 @@ public interface Classifier {
      * the object.
      */
     private final String id;
+
     /**
      * Display name for the recognition.
      */
     private final String title;
+
     /**
      * A sortable score for how good the recognition is relative to others. Higher should be better.
      */
     private final Float confidence;
+
     /**
      * Optional location within the source image for the location of the recognized object.
      */
@@ -80,18 +85,23 @@ public interface Classifier {
       if (id != null) {
         resultString += "[" + id + "] ";
       }
+
       if (title != null) {
         resultString += title + " ";
       }
+
       if (confidence != null) {
         resultString += String.format("(%.1f%%) ", confidence * 100.0f);
       }
+
       if (location != null) {
         resultString += location + " ";
       }
+
       return resultString.trim();
     }
   }
+
 
   List<Recognition> recognizeImage(Bitmap bitmap);
 

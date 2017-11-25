@@ -12,6 +12,7 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 ==============================================================================*/
+
 package org.tensorflow.tensorlib.view;
 
 import org.tensorflow.tensorlib.classifier.Classifier;
@@ -20,6 +21,6 @@ import java.util.List;
 
 public interface ResultsView {
   public void setResults(final List<Classifier.Recognition> results);
-
   public void setStringResults(final List<String> results);
+
 }

@@ -12,6 +12,7 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 ==============================================================================*/
+
 package org.tensorflow.tensorlib.env;
 
 import android.util.Log;
@@ -25,6 +26,7 @@ import java.util.Set;
 public final class Logger {
   private static final String DEFAULT_TAG = "tensorflow";
   private static final int DEFAULT_MIN_LOG_LEVEL = Log.DEBUG;
+
   // Classes to be ignored when examining the stack trace
   private static final Set<String> IGNORED_CLASS_NAMES;
 
@@ -110,6 +112,7 @@ public final class Logger {
   private static String getCallerSimpleName() {
     // Get the current callstack so we can pull the class of the caller off of it.
     final StackTraceElement[] stackTrace = Thread.currentThread().getStackTrace();
+
     for (final StackTraceElement elem : stackTrace) {
       final String className = elem.getClassName();
       if (!IGNORED_CLASS_NAMES.contains(className)) {
@@ -118,6 +121,7 @@ public final class Logger {
         return classParts[classParts.length - 1];
       }
     }
+
     return Logger.class.getSimpleName();
   }
 

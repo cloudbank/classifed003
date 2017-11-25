@@ -53,8 +53,13 @@ public interface FlickrService {
   @GET(API_BASE_URL + "?method=flickr.tags.getListUser&format=json&nojsoncallback=1&" + KEY)
   Observable<Who> getTags(@Query("user_id") String uid);
 
-  @GET(API_BASE_URL + "?method=flickr.photos.search&text='hokusai+or+koson+or+hiroshige'&safe_search='1'&format=json&nojsoncallback=1&" + KEY)
+
+
+  @GET(API_BASE_URL + "?method=flickr.photos.search&text='hokusai+or+koson+or+hiroshige'&safe_search='1'&format=json&nojsoncallback=1&" + KEY + "&extras=date_taken,owner_name,tags&per_page=500")
   Observable<Photos> getPaintingsPhotos();
+
+
+
 
   @Multipart
   @POST("https://up.flickr.com/services/upload?format=json&nojsoncallback=1&" + KEY)

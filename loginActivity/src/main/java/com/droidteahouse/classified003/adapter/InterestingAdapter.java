@@ -4,7 +4,6 @@ import android.content.Context;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -65,7 +64,9 @@ public class InterestingAdapter extends RecyclerView.Adapter<InterestingAdapter.
     mContext = context;
     this.setHasStableIds(true);
   }
+
   private static final String TAG = "InterestingAdapter";
+
   private Context getContext() {
     return mContext;
   }
@@ -92,16 +93,20 @@ public class InterestingAdapter extends RecyclerView.Adapter<InterestingAdapter.
     int aspectRatio = 0;
     if ((photo != null && photo.getHeight() != null) && photo.getWidth() != null) {
       aspectRatio = (Integer.parseInt(photo.getHeight()) / Integer.parseInt(photo.getWidth()));
+      Random rand = new Random();
+      int n = rand.nextInt(100) + 375;
+      lp.height = n; // photo.getPhotoHeight() * 2;
+      lp.width = aspectRatio > 0 ? n / aspectRatio : n;//
+      fp.width = lp.width;
+      fp.height = lp.height;
+      cv.setLayoutParams(fp);
     } else {
-      Log.d(TAG, " photo is null" + photo);
+      lp.height = 200; // photo.getPhotoHeight() * 2;
+      lp.width = 200;
+      fp.width = lp.width;
+      fp.height = lp.height;
+      cv.setLayoutParams(fp);
     }
-    Random rand = new Random();
-    int n = rand.nextInt(100) + 375;
-    lp.height = n; // photo.getPhotoHeight() * 2;
-    lp.width = aspectRatio > 0 ? n / aspectRatio : n;//
-    fp.width = lp.width;
-    fp.height = lp.height;
-    cv.setLayoutParams(fp);
     Picasso.with(this.getContext()).load(photo.getUrl()).fit().centerCrop()
         .placeholder(android.R.drawable.btn_star)
         .error(android.R.drawable.btn_star)

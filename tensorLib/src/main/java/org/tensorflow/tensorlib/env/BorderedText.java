@@ -12,6 +12,7 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 ==============================================================================*/
+
 package org.tensorflow.tensorlib.env;
 
 import android.graphics.Canvas;
@@ -30,6 +31,7 @@ import java.util.Vector;
 public class BorderedText {
   private final Paint interiorPaint;
   private final Paint exteriorPaint;
+
   private final float textSize;
 
   /**
@@ -57,6 +59,7 @@ public class BorderedText {
     interiorPaint.setStyle(Style.FILL);
     interiorPaint.setAntiAlias(false);
     interiorPaint.setAlpha(255);
+
     exteriorPaint = new Paint();
     exteriorPaint.setTextSize(textSize);
     exteriorPaint.setColor(exteriorColor);
@@ -64,6 +67,7 @@ public class BorderedText {
     exteriorPaint.setStrokeWidth(textSize / 8);
     exteriorPaint.setAntiAlias(false);
     exteriorPaint.setAlpha(255);
+
     this.textSize = textSize;
   }
 

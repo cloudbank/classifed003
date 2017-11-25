@@ -13,6 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
 package org.tensorflow.tensorlib.activity;
 
 import android.Manifest;
@@ -39,10 +40,14 @@ import java.nio.ByteBuffer;
 
 public abstract class CameraActivity extends Activity implements OnImageAvailableListener {
   private static final Logger LOGGER = new Logger();
+
   private static final int PERMISSIONS_REQUEST = 1;
+
   private static final String PERMISSION_CAMERA = Manifest.permission.CAMERA;
   private static final String PERMISSION_STORAGE = Manifest.permission.WRITE_EXTERNAL_STORAGE;
+
   private boolean debug = false;
+
   private Handler handler;
   private HandlerThread handlerThread;
 
@@ -51,7 +56,9 @@ public abstract class CameraActivity extends Activity implements OnImageAvailabl
     LOGGER.d("onCreate " + this);
     super.onCreate(null);
     getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+
     setContentView(R.layout.activity_camera);
+
     if (hasPermission()) {
       setFragment();
     } else {
@@ -69,6 +76,7 @@ public abstract class CameraActivity extends Activity implements OnImageAvailabl
   public synchronized void onResume() {
     LOGGER.d("onResume " + this);
     super.onResume();
+
     handlerThread = new HandlerThread("inference");
     handlerThread.start();
     handler = new Handler(handlerThread.getLooper());
@@ -77,10 +85,12 @@ public abstract class CameraActivity extends Activity implements OnImageAvailabl
   @Override
   public synchronized void onPause() {
     LOGGER.d("onPause " + this);
+
     if (!isFinishing()) {
       LOGGER.d("Requesting finish");
       finish();
     }
+
     handlerThread.quitSafely();
     try {
       handlerThread.join();
@@ -89,6 +99,7 @@ public abstract class CameraActivity extends Activity implements OnImageAvailabl
     } catch (final InterruptedException e) {
       LOGGER.e(e, "Exception!");
     }
+
     super.onPause();
   }
 
@@ -155,6 +166,7 @@ public abstract class CameraActivity extends Activity implements OnImageAvailabl
             this,
             getLayoutId(),
             getDesiredPreviewFrameSize());
+
     getFragmentManager()
         .beginTransaction()
         .replace(R.id.container, fragment)

@@ -5,6 +5,7 @@ import android.os.Environment;
 /**
  * Created by sabine on 8/2/17.
  */
+
 public final class ClassifierType {
   //@todo change the graph regarding decodeJpeg if nec
   //replacement for enum because TypeDef annotations lead to interface pef field bloat
@@ -12,6 +13,7 @@ public final class ClassifierType {
   //@todo input output on inception looks as if it is not optimzied/quantized
   public static final ClassifierType CLASSIFIER_INCEPTION = new ClassifierType("tensorflow_inception_graph", "imagenet_comp_graph_label_strings.txt", 224, 117, 1, "input", "output", "CLASSIFIER_INCEPTION");
   public static final String SDFILESTART = Environment.getExternalStorageState() + "/";
+
 
   public static ClassifierType getTypeForString(String type) {
     ClassifierType classifierType;
@@ -23,6 +25,7 @@ public final class ClassifierType {
     return classifierType;
   }
 
+
   private int inputSize = 0;
   private int imageMean = 0;
   private float imageStd = 0f;
@@ -33,6 +36,7 @@ public final class ClassifierType {
   private String name = "";
   //@Keep
   //
+
 
   public int getInputSize() {
     return inputSize;
@@ -80,7 +84,9 @@ public final class ClassifierType {
     this.inputName = inputName;
     this.outputName = outputName;
     this.name = name;
+
   }
+
 
   public String getName() {
     return this.name;

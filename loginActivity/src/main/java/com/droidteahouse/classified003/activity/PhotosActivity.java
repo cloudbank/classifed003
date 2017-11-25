@@ -30,8 +30,6 @@ import com.droidteahouse.classified003.R;
 import com.droidteahouse.classified003.fragments.FlickrBaseFragment;
 import com.droidteahouse.classified003.fragments.FriendsFragment;
 import com.droidteahouse.classified003.fragments.InterestingFragment;
-import com.droidteahouse.classified003.fragments.SearchFragment;
-import com.droidteahouse.classified003.fragments.TagsFragment;
 import com.droidteahouse.classified003.util.Util;
 import com.droidteahouse.oauthkit.OAuthBaseClient;
 
@@ -222,9 +220,9 @@ public class PhotosActivity extends AppCompatActivity implements FlickrBaseFragm
     }
     getSupportActionBar().setHomeButtonEnabled(true);
     TabLayout tabLayout = (TabLayout) findViewById(R.id.tab_layout);
-    tabLayout.addTab(tabLayout.newTab().setText("foo"));
-    tabLayout.addTab(tabLayout.newTab().setText("bar"));
-    tabLayout.addTab(tabLayout.newTab().setText("goo"));
+    //tabLayout.addTab(tabLayout.newTab().setText("foo"));
+    tabLayout.addTab(tabLayout.newTab().setText("Classify"));
+    //tabLayout.addTab(tabLayout.newTab().setText("goo"));
     tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
     adapterViewPager = new MyPagerAdapter(getSupportFragmentManager(), intializeItems());
     vpPager = (ViewPager) findViewById(R.id.vpPager);
@@ -270,9 +268,9 @@ public class PhotosActivity extends AppCompatActivity implements FlickrBaseFragm
 
   public ArrayList<Fragment> intializeItems() {
     ArrayList<Fragment> a = new ArrayList<Fragment>();
-    a.add(FriendsFragment.newInstance(0, getResources().getString(R.string.friends_and_you), new FriendsFragment()));
+   // a.add(FriendsFragment.newInstance(0, getResources().getString(R.string.friends_and_you), new FriendsFragment()));
     a.add(InterestingFragment.newInstance(1, getResources().getString(R.string.interesting_today), new InterestingFragment()));
-    a.add(SearchFragment.newInstance(2, getResources().getString(R.string.tags), new TagsFragment()));
+   // a.add(SearchFragment.newInstance(2, getResources().getString(R.string.tags), new TagsFragment()));
     return a;
   }
 
