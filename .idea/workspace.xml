@@ -36,80 +36,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f80aa30-297e-4c7f-9a2e-a543f5abd3ab" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mylibrary/proguard-rules.pro" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tensorLib/CMakeLists.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tensorLib/build.gradle" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tensorLib/libs/armeabi-v7a/libtensorflow_inference.so" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tensorLib/libs/libandroid_tensorflow_inference_java.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tensorLib/libs/x86/libtensorflow_inference.so" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tensorLib/src/main/AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tensorLib/src/main/assets/imagenet_comp_graph_label_strings.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tensorLib/src/main/assets/retrained_labels.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tensorLib/src/main/assets/rounded_graph.pb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tensorLib/src/main/assets/tensorflow_inception_graph.pb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tensorLib/src/main/cpp/imageutils_jni.cc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tensorLib/src/main/cpp/rgb2yuv.cc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tensorLib/src/main/cpp/rgb2yuv.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tensorLib/src/main/cpp/yuv2rgb.cc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tensorLib/src/main/cpp/yuv2rgb.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tensorLib/src/main/java/org/tensorflow/tensorlib/TensorLib.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tensorLib/src/main/java/org/tensorflow/tensorlib/activity/BitmapClassifier.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tensorLib/src/main/java/org/tensorflow/tensorlib/activity/CameraActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tensorLib/src/main/java/org/tensorflow/tensorlib/activity/ClassifierActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tensorLib/src/main/java/org/tensorflow/tensorlib/activity/StylizeActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tensorLib/src/main/java/org/tensorflow/tensorlib/classifier/Classifier.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tensorLib/src/main/java/org/tensorflow/tensorlib/classifier/ClassifierType.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tensorLib/src/main/java/org/tensorflow/tensorlib/classifier/TensorFlowImageClassifier.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tensorLib/src/main/java/org/tensorflow/tensorlib/env/BorderedText.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tensorLib/src/main/java/org/tensorflow/tensorlib/env/ImageUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tensorLib/src/main/java/org/tensorflow/tensorlib/env/Logger.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tensorLib/src/main/java/org/tensorflow/tensorlib/fragment/BitmapFragment.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tensorLib/src/main/java/org/tensorflow/tensorlib/fragment/CameraConnectionFragment.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tensorLib/src/main/java/org/tensorflow/tensorlib/util/Util.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tensorLib/src/main/java/org/tensorflow/tensorlib/view/AutoFitTextureView.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tensorLib/src/main/java/org/tensorflow/tensorlib/view/OverlayView.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tensorLib/src/main/java/org/tensorflow/tensorlib/view/RecognitionScoreView.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tensorLib/src/main/java/org/tensorflow/tensorlib/view/ResultsView.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tensorLib/src/main/res/drawable-hdpi/ic_action_info.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tensorLib/src/main/res/drawable-hdpi/ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tensorLib/src/main/res/drawable-hdpi/tile.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tensorLib/src/main/res/drawable-mdpi/ic_action_info.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tensorLib/src/main/res/drawable-mdpi/ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tensorLib/src/main/res/drawable-xhdpi/ic_action_info.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tensorLib/src/main/res/drawable-xhdpi/ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tensorLib/src/main/res/drawable-xxhdpi/ic_action_info.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tensorLib/src/main/res/drawable-xxhdpi/ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tensorLib/src/main/res/layout/activity_camera.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tensorLib/src/main/res/layout/bitmap_fragment.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tensorLib/src/main/res/layout/camera_connection_fragment_stylize.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tensorLib/src/main/res/layout/camera_connection_fragment_tracking.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tensorLib/src/main/res/layout/camera_fragment.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tensorLib/src/main/res/values-sw600dp/template-dimens.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tensorLib/src/main/res/values-sw600dp/template-styles.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tensorLib/src/main/res/values-v11/styles.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tensorLib/src/main/res/values-v11/template-styles.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tensorLib/src/main/res/values-v14/styles.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tensorLib/src/main/res/values-v21/base-colors.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tensorLib/src/main/res/values-v21/base-template-styles.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tensorLib/src/main/res/values/attrs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tensorLib/src/main/res/values/base-strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tensorLib/src/main/res/values/colors.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tensorLib/src/main/res/values/strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tensorLib/src/main/res/values/styles.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tensorLib/src/main/res/values/template-dimens.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tensorLib/src/main/res/values/template-styles.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gradle.properties" afterPath="$PROJECT_DIR$/gradle.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loginActivity/build.gradle" afterPath="$PROJECT_DIR$/loginActivity/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loginActivity/build/outputs/logs/manifest-merger-debug-report.txt" afterPath="$PROJECT_DIR$/loginActivity/build/outputs/logs/manifest-merger-debug-report.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loginActivity/loginActivity.iml" afterPath="$PROJECT_DIR$/loginActivity/loginActivity.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loginActivity/src/main/java/com/droidteahouse/classified003/activity/ClassifierDisplayActivity.java" afterPath="$PROJECT_DIR$/loginActivity/src/main/java/com/droidteahouse/classified003/activity/ClassifierDisplayActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loginActivity/src/main/java/com/droidteahouse/classified003/activity/PhotosActivity.java" afterPath="$PROJECT_DIR$/loginActivity/src/main/java/com/droidteahouse/classified003/activity/PhotosActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loginActivity/src/main/java/com/droidteahouse/classified003/adapter/InterestingAdapter.java" afterPath="$PROJECT_DIR$/loginActivity/src/main/java/com/droidteahouse/classified003/adapter/InterestingAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loginActivity/src/main/java/com/droidteahouse/classified003/fragments/InterestingFragment.java" afterPath="$PROJECT_DIR$/loginActivity/src/main/java/com/droidteahouse/classified003/fragments/InterestingFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loginActivity/src/main/java/com/droidteahouse/classified003/service/FlickrService.java" afterPath="$PROJECT_DIR$/loginActivity/src/main/java/com/droidteahouse/classified003/service/FlickrService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/oauthkit/oauthkit.iml" afterPath="$PROJECT_DIR$/oauthkit/oauthkit.iml" />
     </list>
     <ignored path="flockr.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -231,8 +158,8 @@
       <file leaf-file-name="TensorLib.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tensorLib/src/main/java/org/tensorflow/tensorlib/TensorLib.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="55" column="0" lean-forward="true" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+            <state relative-caret-position="145">
+              <caret line="54" column="1" lean-forward="true" selection-start-line="54" selection-start-column="1" selection-end-line="54" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -4482,7 +4409,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1511578150452" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1511578722897" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
@@ -4530,7 +4457,7 @@
       </Profilers>
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1511578150452" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1511578722897" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -4722,7 +4649,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1511578150453" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1511578722899" />
       </method>
     </configuration>
     <list size="2">
@@ -5285,8 +5212,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tensorLib/src/main/java/org/tensorflow/tensorlib/TensorLib.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="55" column="0" lean-forward="true" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+        <state relative-caret-position="145">
+          <caret line="54" column="1" lean-forward="true" selection-start-line="54" selection-start-column="1" selection-end-line="54" selection-end-column="1" />
           <folding />
         </state>
       </provider>
