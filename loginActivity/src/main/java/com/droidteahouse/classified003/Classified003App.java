@@ -12,6 +12,7 @@ import com.droidteahouse.classified003.service.ServiceGenerator;
 import com.droidteahouse.classified003.util.Util;
 import com.facebook.stetho.Stetho;
 import com.jakewharton.picasso.OkHttp3Downloader;
+import com.squareup.leakcanary.LeakCanary;
 import com.squareup.picasso.Picasso;
 
 import org.tensorflow.tensorlib.TensorLib;
@@ -75,5 +76,11 @@ public class Classified003App extends MultiDexApplication {
     //built.setIndicatorsEnabled(true);
     built.setLoggingEnabled(false);
     Picasso.setSingletonInstance(built);
+    if (LeakCanary.isInAnalyzerProcess(this)) {
+      // This process is dedicated to LeakCanary for heap analysis.
+      // You should not init your app in this process.
+      return;
+    }
+    LeakCanary.install(this);
   }
 }
