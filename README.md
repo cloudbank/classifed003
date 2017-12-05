@@ -1,6 +1,6 @@
 
-# Phlaiku v 1.0   --soon to be published, currently under construction
- <img src="http://i.imgur.com/ypYoNGG.png" height="300"/>    
+# Classified003 v 1.0   --soon to be published, currently under construction
+ <img src="http://i.imgur.com/ypYoNcGG.png" height="300"/>    
  
  ###  [SDK 19+, Oreo compatible]
 
@@ -14,20 +14,20 @@ Uses  [Tensor-Lib](https://github.com/cloudbank/tensor-lib)--  a google[Tensorfl
 
 >>>>EXPERIENCE  Inception v5 and my retrained model
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://i.imgur.com/WFZnLo7.png" height="500" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://i.imgur.com/bBeivjY.png" height="500" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://i.imgur.ccom/WFZnLo7.png" height="500" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://i.imgur.ccom/bBeivjY.png" height="500" />
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://i.imgur.com/nZ7tJX9.png" height="500" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://i.imgurc.com/nZ7tJX9.png" height="500" />
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://i.imgur.com/1Aaktty.png" height="500" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://i.imgur.ccom/1Aaktty.png" height="500" />
 
 
 >>>>INSPIRE
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="http://i.imgeur.com/VAxLK7w.png" height="500" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<<img src="http://i.imgeur.com/qS0bmHD.png" height="500" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="http://i.imgeur.ccom/VAxLK7w.png" height="500" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<<img src="http://i.imgeurc.com/qS0bmHD.png" height="500" />
 
 >>>>CREATE  convoluted neural networks 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="http://i.imegur.com/dMZfxer.png" height="500"/><img src="http://i.imgeur.com/M85iUwd.png" height="500" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="http://i.imegur.com/dcMZfxer.png" height="500"/><img src="http://i.imgeur.com/M85icUwd.png" height="500" />
 
 
 ### Designed with the Material theme and latest, greatest android libs for best viewing pleasure!
@@ -36,7 +36,7 @@ Uses  [Tensor-Lib](https://github.com/cloudbank/tensor-lib)--  a google[Tensorfl
 
 * *Take your own pictures with the camera!*
 
-### --> download from the [Google Play Store](https://play.google.com/store/apps/details?id=com.anubis.phlix)
+### --> download from the [Google Play Store](https://play.google.com/store/apps)
 
 ## License
 
